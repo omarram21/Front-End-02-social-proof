@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+  background: url(images/bg-pattern-top-desktop.svg) no-repeat,
+    url(images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+/* START */
+.first-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text {
+  width: 50%;
+}
+.text h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 50px;
+}
+.text p {
+  margin: 30px 0;
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.rated-three {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 30px;
+}
+.rated-three .all {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+  width: 70%;
+  height: 15%;
+  border-radius: 10px;
+}
+.rated-three .all p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.rated-three .reated-1 {
+  align-self: flex-start;
+}
+.rated-three .reated-2 {
+  align-self: center;
+}
+.rated-three .reated-3 {
+  align-self: flex-end;
+}
+/* End First Column  */
+/* Start scound Column  */
+.sconde-row {
+  display: flex;
+  margin-top: 50px;
+}
+.sconde-row .all {
+  background-color: hsl(300, 43%, 22%);
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.sconde-row .all .information {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+}
+.sconde-row .taks-1 {
+  margin-top: 0%;
+}
+.sconde-row .all .information .img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  background-color: plum;
+}
+.sconde-row .all .information .names .h-1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+.sconde-row .all .information .names .h-1 {
+  color: hsl(0, 0%, 100%);
+}
+.sconde-row .all .information .names h3 {
+  color: rgb(125 58 111);
+  margin-top: 5px;
+}
+.sconde-row .taks-2 {
+  margin-top: 2%;
+}
+.sconde-row .taks-3 {
+  margin-top: 4%;
+}
+.sconde-row .taks-1 .information .img {
+  background: url(images/image-colton.jpg) no-repeat;
+}
+.sconde-row .taks-2 .information .img {
+  background: url(images/image-irene.jpg) no-repeat;
+}
+.sconde-row .taks-3 .information .img {
+  background: url(images/image-anne.jpg) no-repeat;
+}
+.sconde-row .all .quts {
+  margin: 20px 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  line-height: 129%;
+}
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 437px) {
+  .container {
+    margin: 30px auto;
+  }
+  .first-row {
+    margin-bottom: 30px;
+  }
+  .text h1 {
+    font-size: 35px;
+  }
+  .rated-three {
+    height: fit-content;
+    width: 100%;
+  }
+  .rated-three .all {
+    display: block;
+    padding: 20px;
+    height: fit-content;
+  }
+  .rated-three .all p {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 877px) {
+  .text,
+  .rated-three {
+    width: 100%;
+    text-align: center;
+  }
+  .rated-three .all {
+    align-self: center;
+  }
+  .sconde-row {
+    flex-wrap: wrap;
+  }
+  .sconde-row .all {
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 1065px) {
+  .first-row {
+    margin-bottom: 30px;
+  }
+  .rated-three .all {
+    width: 100%;
+  }
+  .rated-three .all {
+    padding: 20px;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
